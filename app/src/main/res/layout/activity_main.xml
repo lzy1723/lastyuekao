@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="首页"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_toolbar"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_balance"/>
+    <TextView
+        android:id="@+id/tv_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入余额："
+        android:textSize="19sp"
+        android:layout_above="@+id/ed_balance"
+        android:layout_alignLeft="@+id/ed_balance"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ok"
+        android:layout_below="@+id/ed_balance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="进入兑换页"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="兑换成功"
+        android:visibility="invisible"
+        android:id="@+id/tv_tv1"
+        android:textSize="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/tv_fin"
+        android:layout_below="@+id/tv_tv1"
+        android:layout_alignLeft="@+id/tv_tv1"
+        android:textSize="40dp"/>
+
+</RelativeLayout>
